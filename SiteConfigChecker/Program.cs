@@ -16,6 +16,10 @@ namespace SiteConfigChecker
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            //new IISSettings().GetCertInfoPersonal();
+            new IISSettings().CheckSettings();
+
             Client client;
             DialogResult result;
             using (var loginForm = new Login())
