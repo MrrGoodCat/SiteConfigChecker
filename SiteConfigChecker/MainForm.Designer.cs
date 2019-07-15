@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.ComponentsPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.IIScb = new System.Windows.Forms.CheckBox();
             this.BSFcb = new System.Windows.Forms.CheckBox();
             this.ComponentsSelectorLabel = new System.Windows.Forms.Label();
-            this.IIScb = new System.Windows.Forms.CheckBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -46,7 +46,6 @@
             // 
             this.ComponentsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ComponentsPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ComponentsPanel.Controls.Add(this.panel1);
             this.ComponentsPanel.Controls.Add(this.ComponentsSelectorLabel);
             this.ComponentsPanel.Location = new System.Drawing.Point(13, 13);
@@ -64,6 +63,16 @@
             this.panel1.Size = new System.Drawing.Size(689, 201);
             this.panel1.TabIndex = 2;
             // 
+            // IIScb
+            // 
+            this.IIScb.AutoSize = true;
+            this.IIScb.Location = new System.Drawing.Point(8, 31);
+            this.IIScb.Name = "IIScb";
+            this.IIScb.Size = new System.Drawing.Size(68, 17);
+            this.IIScb.TabIndex = 1;
+            this.IIScb.Text = "IIS Basic";
+            this.IIScb.UseVisualStyleBackColor = true;
+            // 
             // BSFcb
             // 
             this.BSFcb.AutoSize = true;
@@ -79,19 +88,9 @@
             this.ComponentsSelectorLabel.AutoSize = true;
             this.ComponentsSelectorLabel.Location = new System.Drawing.Point(7, 7);
             this.ComponentsSelectorLabel.Name = "ComponentsSelectorLabel";
-            this.ComponentsSelectorLabel.Size = new System.Drawing.Size(223, 13);
+            this.ComponentsSelectorLabel.Size = new System.Drawing.Size(167, 13);
             this.ComponentsSelectorLabel.TabIndex = 1;
-            this.ComponentsSelectorLabel.Text = "Select components that you want to validate: ";
-            // 
-            // IIScb
-            // 
-            this.IIScb.AutoSize = true;
-            this.IIScb.Location = new System.Drawing.Point(8, 31);
-            this.IIScb.Name = "IIScb";
-            this.IIScb.Size = new System.Drawing.Size(68, 17);
-            this.IIScb.TabIndex = 1;
-            this.IIScb.Text = "IIS Basic";
-            this.IIScb.UseVisualStyleBackColor = true;
+            this.ComponentsSelectorLabel.Text = "Select components for validation: ";
             // 
             // tabControl1
             // 
@@ -100,10 +99,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(13, 262);
+            this.tabControl1.Location = new System.Drawing.Point(13, 270);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(700, 513);
+            this.tabControl1.Size = new System.Drawing.Size(700, 505);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -111,7 +110,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(692, 487);
+            this.tabPage1.Size = new System.Drawing.Size(692, 479);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "BSF";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -121,7 +120,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(694, 368);
+            this.tabPage2.Size = new System.Drawing.Size(692, 479);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "IIS Basic";
             this.tabPage2.UseVisualStyleBackColor = true;

@@ -123,6 +123,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ComponentsConfigurationData\ComponentData.xml" />
     <Content Include="Resources\zoidberg.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
