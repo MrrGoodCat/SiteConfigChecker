@@ -18,7 +18,7 @@ namespace SiteConfigChecker
             Application.SetCompatibleTextRenderingDefault(false);
 
             //new IISSettings().GetCertInfoPersonal();
-            new IISSettings().CheckSettings();
+            //new IISSettings().CheckSettings();
 
             Client client;
             DialogResult result;
