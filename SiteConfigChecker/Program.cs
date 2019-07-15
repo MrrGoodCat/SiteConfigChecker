@@ -16,7 +16,17 @@ namespace SiteConfigChecker
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Client client;
+            DialogResult result;
+            using (var loginForm = new Login())
+                result = loginForm.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                // login was successful
+                Application.Run(new MainForm());
+            }
+
+            
         }
     }
 }
