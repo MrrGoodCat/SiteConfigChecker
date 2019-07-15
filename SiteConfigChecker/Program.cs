@@ -16,20 +16,19 @@ namespace SiteConfigChecker
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            //new IISSettings().GetCertInfoPersonal();
-            //new IISSettings().CheckSettings();
-
-            Client client;
+            //Client client;
             DialogResult result;
+            string token;
             using (var loginForm = new Login())
+            {
                 result = loginForm.ShowDialog();
+                token = loginForm.Token;
+            }
             if (result == DialogResult.OK)
             {
                 // login was successful
-                Application.Run(new MainForm());
+                Application.Run(new MainForm(token));
             }
-
             
         }
     }

@@ -12,9 +12,11 @@ namespace SiteConfigChecker
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        public string Token { get; set; }
+        public MainForm(string token)
         {
             InitializeComponent();
+            Token = token;
         }
     }
 }
