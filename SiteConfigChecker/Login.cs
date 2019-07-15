@@ -22,14 +22,24 @@ namespace SiteConfigChecker
             string appServerLocation;
             string username;
             string password;
+            string domain;
 
             appServerLocation = sysAdminLocationTextBox.Text;
             username = usernameTextBox.Text;
             password = passwordTextBox.Text;
+            domain = domainTextBox.Text;
             Client client;
             try
             {
-                client = new Client(appServerLocation, username, password);
+                if (adAuthCheckBox.Checked)
+                {
+                    client = new Client(appServerLocation, username, password, domain);
+                }
+                else
+                {
+                    client = new Client(appServerLocation, username, password);
+                }
+                
                 Token = client.tokenWithID;
                 DialogResult = DialogResult.OK;
             }
@@ -38,19 +48,23 @@ namespace SiteConfigChecker
                 MessageBox.Show(String.Format("Login Failed \n {0}\n {1}",ex.Message, ex.ToString()));
             }
 
-            //if (User.Login(username, password))
-            //{
-            //    Globals._Login = true;
+        }
 
-            //    // Close login form
-            //    this.Dispose(false);
+        private void adAuthCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (adAuthCheckBox.Checked)
+            {
+                domainTextBox.Enabled = true;
+            }
+            else
+            {
+                domainTextBox.Enabled = false;
+            }
+        }
 
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Login Failed");
-            //}
-
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
