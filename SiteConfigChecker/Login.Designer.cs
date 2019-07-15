@@ -40,30 +40,33 @@
             // 
             // sysAdminLocationTextBox
             // 
-            this.sysAdminLocationTextBox.Location = new System.Drawing.Point(255, 134);
+            this.sysAdminLocationTextBox.Location = new System.Drawing.Point(256, 119);
             this.sysAdminLocationTextBox.Name = "sysAdminLocationTextBox";
             this.sysAdminLocationTextBox.Size = new System.Drawing.Size(300, 20);
             this.sysAdminLocationTextBox.TabIndex = 0;
+            this.sysAdminLocationTextBox.Text = "App-123";
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.Location = new System.Drawing.Point(255, 204);
+            this.usernameTextBox.Location = new System.Drawing.Point(256, 189);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(300, 20);
             this.usernameTextBox.TabIndex = 1;
+            this.usernameTextBox.Text = "nice";
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(255, 271);
+            this.passwordTextBox.Location = new System.Drawing.Point(256, 256);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(300, 20);
             this.passwordTextBox.TabIndex = 2;
+            this.passwordTextBox.Text = "nicecti1!";
             this.passwordTextBox.UseSystemPasswordChar = true;
             // 
             // sysAdminLocationLabel
             // 
             this.sysAdminLocationLabel.AutoSize = true;
-            this.sysAdminLocationLabel.Location = new System.Drawing.Point(252, 118);
+            this.sysAdminLocationLabel.Location = new System.Drawing.Point(253, 103);
             this.sysAdminLocationLabel.Name = "sysAdminLocationLabel";
             this.sysAdminLocationLabel.Size = new System.Drawing.Size(187, 13);
             this.sysAdminLocationLabel.TabIndex = 3;
@@ -72,7 +75,7 @@
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Location = new System.Drawing.Point(252, 188);
+            this.usernameLabel.Location = new System.Drawing.Point(253, 173);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(55, 13);
             this.usernameLabel.TabIndex = 4;
@@ -81,7 +84,7 @@
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(252, 255);
+            this.passwordLabel.Location = new System.Drawing.Point(253, 240);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(53, 13);
             this.passwordLabel.TabIndex = 5;
@@ -89,7 +92,7 @@
             // 
             // loginBtn
             // 
-            this.loginBtn.Location = new System.Drawing.Point(255, 319);
+            this.loginBtn.Location = new System.Drawing.Point(256, 304);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(130, 30);
             this.loginBtn.TabIndex = 6;
@@ -99,7 +102,7 @@
             // 
             // cancelBtn
             // 
-            this.cancelBtn.Location = new System.Drawing.Point(425, 319);
+            this.cancelBtn.Location = new System.Drawing.Point(426, 304);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(130, 30);
             this.cancelBtn.TabIndex = 7;
@@ -120,7 +123,7 @@
             this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.sysAdminLocationTextBox);
             this.Name = "Login";
-            this.Text = "SiteConfigChecker";
+            this.Text = "Site Configuration Checker - Log in";
             this.ResumeLayout(false);
             this.PerformLayout();
 
