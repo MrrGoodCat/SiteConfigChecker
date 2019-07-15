@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <Components>
+    <Component>
+      <Name isMandatory="true">BSF</Name>
+      <RelatedServices>
+        <Service>NICE BSF Server</Service>
+        <Service>NetTcpPortSharing</Service>
+      </RelatedServices>
+      <RelatedConfigs>
+        <Config></Config>
+      </RelatedConfigs>
+      <ComponentSpecifics>        
+      </ComponentSpecifics>
+      <ValidationList>
+        <Validation resultType="bool">All related services is up-and-running</Validation>
+        <Validation resultType="bool">Service HostName\FQDN is equal to SysAdmin</Validation>
+        <Validation resultType="bool">Service binded certificate installed, matching the configured HostName\FQDN and configured Thumbprint</Validation>
+        <Validation resultType="bool">Endpoint defined with appropriate HostName\FQDN</Validation>
+        <Validation resultType="bool">BSF running\can run on configured port</Validation>
+        <Validation resultType="bool">Token lifetime configurred properly</Validation>
+        <Validation resultType="bool">All Endpoints publishing methadata</Validation>
+      </ValidationList>
+    </Component>
+    <Component>
+      <Name isMandatory="true">IIS Basic</Name>
+      <RelatedServices>
+      </RelatedServices>
+      <RelatedConfigs>
+        <Config></Config>
+      </RelatedConfigs>
+      <ComponentSpecifics>
+      </ComponentSpecifics>
+      <ValidationList>
+        <Validation resultType="bool"></Validation>
+        <Validation resultType="structure">Which bundings configured on default WebSite</Validation>
+        <Validation conditional="true" resultType="bool">HTTPS certificate is applied and valid</Validation>
+        <Validation resultType="structure">Next authentication types are enabled on IIS</Validation>
+        <Validation resultType="bool">Redirection rules are properly configured</Validation>
+      </ValidationList>
+    </Component>
+  </Components>
+</root>
