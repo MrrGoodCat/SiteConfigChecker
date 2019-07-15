@@ -14,19 +14,6 @@ namespace SiteConfigChecker
 {
     public class Client
     {
-
-        //private static Client instance;
-
-        //private Client()
-        //{ }
-
-        //public static Client getInstance()
-        //{
-        //    if (instance == null)
-        //        instance = new Client();
-        //    return instance;
-        //}
-
         LoginToken m_loginInfo;
         public string tokenWithID;
         public Client(string appServerLocation, string username, string password)
@@ -39,7 +26,20 @@ namespace SiteConfigChecker
             LoginHelper m_loginHelper = new LoginHelper(m_remotingHostAndPort, false);
             m_loginInfo = m_loginHelper.Login(username, password);
             tokenWithID = "1_" + m_loginInfo.Token;
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
+        }
+
+        public Client(string appServerLocation, string username, string password, string domain)
+        {
+            string appServer = appServerLocation;
+            string m_remotingHostAndPort = appServer + ":62070";
+            string m_assembliesBin = "http://" + appServer + "/NiceApplications/ClientBin";
+
+            NiceApplications.CommunicationLayer.TimeResolver.InitClient(m_remotingHostAndPort, m_assembliesBin);
+            LoginHelper m_loginHelper = new LoginHelper(m_remotingHostAndPort, false);
+            m_loginInfo = m_loginHelper.Login(username, password, domain);
+            tokenWithID = "1_" + m_loginInfo.Token;
+            //Thread.Sleep(1000);
         }
     }
 }
