@@ -33,8 +33,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NICE.Logging.Common, Version=6.3.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\NICE.Logging.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NICE.Logging.Server, Version=6.3.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\NICE.Logging.Server.dll</HintPath>
+    </Reference>
     <Reference Include="NiceApplications.CommunicationLayer">
       <HintPath>Dependencies\NiceApplications.CommunicationLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="NiceApplications.CryptoUtils, Version=6.3.5.0, Culture=neutral, PublicKeyToken=72137b9e2c9f09de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\NiceApplications.CryptoUtils.dll</HintPath>
     </Reference>
     <Reference Include="NiceApplications.LoginUtils">
       <HintPath>Dependencies\NiceApplications.LoginUtils.dll</HintPath>
