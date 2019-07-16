@@ -78,6 +78,7 @@
   <ItemGroup>
     <Compile Include="CertDetails.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="Enums\Result.cs" />
     <Compile Include="IISSettings.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -96,6 +97,8 @@
     <Compile Include="Service.cs" />
     <Compile Include="ServiceChecker.cs" />
     <Compile Include="ServiceStatusEnum.cs" />
+    <Compile Include="Validation Infrastructure\ComponentValidator.cs" />
+    <Compile Include="Validation Infrastructure\ValidationResult.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,5 +133,6 @@
     <Content Include="ComponentsConfigurationData\ComponentData.xml" />
     <Content Include="Resources\zoidberg.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
