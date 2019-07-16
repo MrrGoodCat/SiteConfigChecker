@@ -33,7 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.Administration, Version=7.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\Microsoft.Web.Administration.dll</HintPath>
+    </Reference>
     <Reference Include="NICE.Logging.Common, Version=6.3.5.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependencies\NICE.Logging.Common.dll</HintPath>
@@ -78,6 +81,7 @@
   <ItemGroup>
     <Compile Include="CertDetails.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="Component\Component.cs" />
     <Compile Include="Enums\Result.cs" />
     <Compile Include="IISSettings.cs" />
     <Compile Include="MainForm.cs">
@@ -133,6 +137,8 @@
     <Content Include="ComponentsConfigurationData\ComponentData.xml" />
     <Content Include="Resources\zoidberg.ico" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
