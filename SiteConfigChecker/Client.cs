@@ -41,5 +41,11 @@ namespace SiteConfigChecker
             tokenWithID = "1_" + m_loginInfo.Token;
             //Thread.Sleep(1000);
         }
+
+
+        public void GetComponents()
+        {
+            
+        }
     }
 }
