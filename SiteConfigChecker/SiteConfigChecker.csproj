@@ -78,6 +78,7 @@
   <ItemGroup>
     <Compile Include="CertDetails.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="Component\Component.cs" />
     <Compile Include="Enums\Result.cs" />
     <Compile Include="IISSettings.cs" />
     <Compile Include="MainForm.cs">
