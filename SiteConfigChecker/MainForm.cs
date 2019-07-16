@@ -35,5 +35,11 @@ namespace SiteConfigChecker
             this.ComponentsPanel.Controls.Add(checkBox);
             this.checkBox.BringToFront();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Size = new Size(734, 900);
+            this.tabControl1.Visible = true;
+        }
     }
 }
