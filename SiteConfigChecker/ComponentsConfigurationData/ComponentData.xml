@@ -4,8 +4,8 @@
     <Component>
       <Name isMandatory="true">BSF</Name>
       <RelatedServices>
-        <Service>NICE BSF Server</Service>
-        <Service>NetTcpPortSharing</Service>
+        <Service serviceName="">NICE BSF Server</Service>
+        <Service serviceName="">Net Tcp Port Sharing</Service>
       </RelatedServices>
       <RelatedConfigs>
         <Config></Config>
@@ -15,7 +15,7 @@
       <ValidationList>
         <Validation resultType="bool">All related services is up-and-running</Validation>
         <Validation resultType="bool">Service HostName\FQDN is equal to SysAdmin</Validation>
-        <Validation resultType="bool">Service binded certificate installed, matching the configured HostName\FQDN and configured Thumbprint</Validation>
+        <Validation resultType="bool">Service binded certificate installed and metching service configuration</Validation>
         <Validation resultType="bool">Endpoint defined with appropriate HostName\FQDN</Validation>
         <Validation resultType="bool">BSF running\can run on configured port</Validation>
         <Validation resultType="bool">Token lifetime configurred properly</Validation>
@@ -32,7 +32,6 @@
       <ComponentSpecifics>
       </ComponentSpecifics>
       <ValidationList>
-        <Validation resultType="bool"></Validation>
         <Validation resultType="structure">Which bundings configured on default WebSite</Validation>
         <Validation conditional="true" resultType="bool">HTTPS certificate is applied and valid</Validation>
         <Validation resultType="structure">Next authentication types are enabled on IIS</Validation>
