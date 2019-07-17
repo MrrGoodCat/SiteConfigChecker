@@ -17,9 +17,22 @@ namespace SiteConfigChecker
         public MainForm(string token)
         {
             InitializeComponent();
+            this.Size = new Size(734, 330);
             //ConfiguredComponents = new List<ResourceType>();
             //GenerateCheckBox("BSF Basic", 14, 35);
             //GenerateCheckBox("IIS Basic", 14, 54);
+            dataGridView1.Rows.Add("http", "", "80", "", "");
+            dataGridView1.Rows.Add("net.msmq", "", "", "", "localhost");
+            dataGridView1.Rows.Add("msmq.formatname", "", "", "", "localhost");
+            dataGridView1.Rows.Add("net.tcp", "", "", "", "808:*");
+            dataGridView1.Rows.Add("net.pipe", "", "", "", "*");
+
+            dataGridView2.Rows.Add("Anonymous Authentication", "Enabled", "");
+            dataGridView2.Rows.Add("ASP.NET Impersonation", "Disabled", "");
+            dataGridView2.Rows.Add("Basic Authentication", "Disabled", "HTTP 401 Challenge");
+            dataGridView2.Rows.Add("Digest Authentication", "Disabled", "HTTP 401 Challenge");
+            dataGridView2.Rows.Add("Forms Authentication", "Disabled", "HTTP 302 Login/Redirect");
+            dataGridView2.Rows.Add("Windows Authentication", "Disabled", "HTTP 401 Challenge");
             Token = token;           
         }
 
