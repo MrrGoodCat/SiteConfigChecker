@@ -386,7 +386,7 @@
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(16, 63);
+            this.label61.Location = new System.Drawing.Point(18, 63);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(190, 13);
             this.label61.TabIndex = 7;
@@ -402,18 +402,18 @@
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(50, 13);
             this.label62.TabIndex = 5;
-            this.label62.Text = "0:12:00";
+            this.label62.Text = "0:25:00";
             // 
             // label63
             // 
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label63.ForeColor = System.Drawing.Color.DarkGreen;
+            this.label63.ForeColor = System.Drawing.Color.Red;
             this.label63.Location = new System.Drawing.Point(379, 13);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(61, 16);
+            this.label63.Size = new System.Drawing.Size(52, 16);
             this.label63.TabIndex = 3;
-            this.label63.Text = "Passed";
+            this.label63.Text = "Failed";
             // 
             // label64
             // 
